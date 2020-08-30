@@ -1,0 +1,816 @@
+/* GENERAL PRESETS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    width: 1100px;
+    margin: 0px auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 479px) { 
+    .container {width: 92%}
+    } 
+    @media screen and (min-width: 480px) { 
+    .container {width: 95%}
+    }
+    @media screen and (min-width: 740px) { 
+    .container {width: 95%}
+    }
+    @media screen and (min-width: 960px) { 
+    .container {width: 95%}
+    }
+    @media screen and (min-width: 1200px) {  
+    .container {width: 1100px}
+    }
+
+/* ======================================================================= */
+/* ======================================================================= */
+
+/* HEADER  */
+
+header {
+    background: url("../img/header.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.headerMenu {
+    background: rgba(72, 52, 42, 0.7);
+    border-bottom: 1px solid rgba(225, 255, 255, 0.2);
+}
+
+.headerMenu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+    color: #fff;
+    text-decoration: none;
+}
+
+.headerMenu li {
+    display: inline-block;
+    padding: 34px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    padding: 34px 20px 31.5px;
+    border-bottom: 2.5px solid transparent;
+}
+
+.menu ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-bottom: 2.5px solid white;
+}
+
+@media screen and (max-width: 990px) {
+    .menu ul li a {
+        padding: 34px 8px;
+    }
+} 
+@media screen and (max-width: 840px) {
+    .headerMenu .container {
+        flex-direction: column;
+    }
+} 
+@media screen and (max-width: 550px) {
+    .headerMenu ul li {
+        display: block;
+        text-align: center;
+    }
+    .menu ul li a {
+        padding: 15px 10px;
+    }
+} 
+
+@media screen and (max-width: 350px) {
+    #logo {
+        font-size: 36px;
+    }
+} 
+
+.mainLogo {
+    color: #fff;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    padding: 310px 0 45px;
+}
+
+.page-heading {
+    font-size: 100px;
+    text-shadow: 0 0 50px rgba(0,0,0,1);
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.page-heading {
+    font-weight: normal;
+}
+
+.mainLogo a {
+    color: #fff;
+    font-size: 30px;
+    margin: 20px 10px 0 20px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 720px) {
+    #logo {
+        font-size: 8vw;
+    }
+    .page-heading {
+        font-size: 12vw;
+    }
+} 
+
+.mainLogo .fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.mainLogo .fa-instagram:hover {
+    color: #e4405f;
+}
+
+.mainLogo .fa-twitter:hover {
+    color: #55acce;
+}
+
+/* SECTION (o nás) */
+
+.pribeh {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.pribeh p {
+    line-height: 26px; 
+}
+
+.pribeh span {
+    font-size: 14px;
+}
+
+.pribeh h1 { 
+    font-size: 55px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.pribehContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pribehBox {
+    /*flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;*/
+    flex: 0 1 300px;
+}
+
+.pribehText h2 {
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.pribeh p {
+    line-height: 22px;
+    padding-bottom: 34px;
+}
+
+.button {
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000;
+    padding: 15px;
+    display: inline-block;
+}
+
+.button:hover {
+    color: #a0785d;
+    border-color: #a0785d;
+}
+
+.button:hover i {
+    transform: translateX(5px);
+}
+
+@media screen and (max-width: 980px) {
+    .pribehContainer img {
+        width: 95%;
+    }
+    .pribehBox p {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .pribehContainer {
+        flex-direction: column;
+    }
+    .pribehBox {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .pribehBox img {
+        width: 300px;
+        height: 200px;
+    }
+    .pribehText h2 {
+        padding: 0 0 30px;
+        margin-bottom: 15px;
+    }
+    .pribehBox p {
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .pribehBox {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom:  40px;
+    }
+}
+
+.akce {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.akceText {
+    background: #a0785d;
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.akce img {
+    width: 50%;
+}
+
+.akceSleva {
+    text-align: right;
+    width: 70%;
+    padding: 50px 30px 30px 0;
+}
+
+.akceSleva h2 {
+    padding-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.akceSleva p {
+    line-height: 26px;
+}
+
+.akceSleva h2:nth-of-type(2) {
+    padding: 50px 0;
+}
+
+.obdelnik {
+    background: rgba(160, 120, 93, 0.5);
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    right: -15%;
+}
+
+@media screen and (max-width: 1000px) {
+    .akceSleva {
+        width: 100%;
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .akce img, .obdelnik {
+        display: none;
+    }
+    .akceText {
+        width: 100%;
+    }
+}
+
+.tip {
+    padding: 78px 0;
+}
+
+.tipObdelnik {
+    background: #a0785d;
+    height: 450px;
+    width: 300px;
+    position: relative;
+}
+
+.tipObr img {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+}
+
+.tip .container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.tipObr {
+    display: flex;
+    flex: 0 1 60%;
+    justify-content: space-between;
+}
+
+.tipText {
+    flex: 0 1 30%;
+}
+
+.tipText h2 {
+    padding-bottom: 70px;
+}
+
+.tipText p:nth-of-type(1) {
+    padding-bottom: 30px;
+}
+
+.tipText p:nth-of-type(2) {
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1120px) {
+    .tipObdelnik, .tipObdelnik img {
+        width: 20vw;
+        height: 28vw;
+    }
+    .tipObr {
+        justify-content: space-around;   
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .tip .container {
+        flex-direction: column;
+    }
+    .tipObdelnik, .tipObdelnik img {
+        width: 30vw;
+        height: 38vw;
+    }
+    .tipObdelnik img {
+        left: -5%;
+        top: -5%;
+    }
+    .tipText {
+        margin-top: 50px;
+    }
+}
+
+/* FOOTER */
+
+.pata {
+    background: #805F49;
+    color: #fff;
+    padding: 80px 0;
+    font-size: 14px;
+}
+
+.fb {
+    width: 340px;
+    height: 155px;
+    background: #fff;
+}
+
+.pata .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pata h3 {
+    padding-bottom: 30px;
+}
+
+.pata ul li {
+    line-height: 26px;
+    list-style: none;
+}
+
+.pata ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.pata ul li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.pata p {
+    line-height: 26px;
+}
+
+.fb {
+    width: 340px;
+    height: 155px;
+    background: #fff;
+}
+
+
+/* copyright */
+
+.copy {
+    background: #fff;
+    width: 100%
+}
+
+.copy .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy .container p {
+    padding: 30px 0;
+}
+
+.copy a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 800px) {
+    .fb {
+        display: none;
+    }
+    .pata .container {
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 800px) {
+    .face {
+        display: none;
+    }
+}
+@media screen and (max-width: 650px) {
+    .copyL a {
+        display: block;
+    }
+    .copyL span {
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .pata .container,
+    .copy .container {
+        flex-direction: column;
+    }  
+    .pata .container {
+        text-align: center;
+    }
+    .pataBox:nth-of-type(2) {
+        padding: 40px 0;
+    }
+}
+
+/* NABIDKA */
+
+.nabidka {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.nabidka h1 {
+    font-size: 55px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.nabVse {
+    display: flex;
+    margin: 40px 0;
+}
+
+.nabBox {
+    width: 25%;
+}
+
+.nabBox h2 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 333px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    height: 333px;
+    background-size: cover;
+}
+
+.nabObr1 {
+    background: url("../img/morning-500.jpg") center no-repeat;
+}
+
+.nabObr2 {
+    background: url("../img/abundance-500.jpg") center no-repeat;
+}
+
+.nabObr3 {
+    background: url("../img/hamburger-500.jpg") center no-repeat;
+}
+
+.nabObr4 {
+    background: url("../img/strawberry-500.jpg") center no-repeat;
+}
+
+.nabText {
+    line-height: 26px;
+    margin-top: 40px;
+}
+
+.nabBox h2:hover {
+    filter: grayscale(80%);
+}
+
+@media screen and (max-width: 1250px) {
+    .nabBox h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .nabVse {
+        flex-direction: column;
+    }
+    .nabBox {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto 30px;
+        
+    }
+    .nabText, .nabBox h2 {
+        width: 50%;
+    }
+    .nabText {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nabBox {
+        flex-direction: column;
+    }
+    .nabText, .nabBox h2 {
+        width: 100%;
+    }
+    .nabText {
+        margin-top: 30px;
+    }
+}
+
+/* REZERVACE */
+
+.rezervace {
+    padding: 100px 0;
+}
+
+.rezervace h1 {
+    font-size: 55px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.rezervace  p:nth-of-type(1) {
+    padding-bottom: 30px;
+}
+.rezervace p i {
+    width: 40px;
+    margin-bottom: 7px;
+}
+.rezervace p a {
+    color: #000;
+    text-decoration: none;
+}
+.rezervace p a:hover {
+    color: #A0785D;
+    text-decoration: underline;
+}
+.rezervace p span {
+    font-weight: 700;
+    color: #A0785D;
+}
+.rezervace h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.form {
+    text-align: center;
+    padding: 40px 0;
+}
+
+form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 820px) {
+    form {
+        width: 100%;
+    }
+}
+
+.form input {
+    padding: 15px;
+    font-size: 16px;
+    margin: 0 auto 5px;
+    font-family: 'Open Sans', sans-serif; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.rezervace textarea {
+    width: 100%;
+    height: 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.rezervace a.submit {
+    text-decoration: none;
+    border: 2px solid red;
+    color: red;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: transparent;
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.rezervace .button-submit {
+    text-align: center;
+}
+
+.rezervace .submit:hover {
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .form input {
+    width: 100%;
+}
+
+
+/* GALERIE */
+
+.galery {
+    padding-bottom: 100px;
+}
+
+.galText {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 40px;
+    line-height: 26px;
+}
+
+.foto img {
+    border-radius: 15px;
+    border: none !important;
+    width: 98%;
+}
+.foto img:hover {
+    box-shadow: 0 0 20px
+}
+.galery h2 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* KONTAKT */
+
+.kontakt {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.kontakt h1 {
+    font-size: 55px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.kontakt .container .konList {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    text-align: left;
+    line-height: 26px;
+}
+.konText h2 {
+    padding-bottom: 30px;
+}
+.konText p span {
+    font-weight: 700;
+    color: #a0785d;
+}
+.konText p a {
+    color: #000;
+    text-decoration: none;
+}
+.konText p a:hover {
+    text-decoration: underline;
+    color: #a0785d;
+}
+.konText p i {
+    margin-right: 20px;
+}
+.karty p {
+    margin-bottom: 15px;
+}
+.mapa iframe {
+    width: 100%;
+    background: #000;
+    padding: 5px 0;
+    margin: 30px 0;
+}
+
+.formular h2 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.formular input[type="text"],
+.formular input[type="email"],
+.formular textarea {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto 5px;
+}
+.formular textarea {
+    height: 130px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formular input[type="submit"] {
+    text-decoration: none;
+    border: 2px solid red;
+    color: red;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: transparent;
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.formular input[type="submit"]:hover {
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
